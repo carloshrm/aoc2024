@@ -11,6 +11,7 @@ bool activateDampener(bool was_dampened, const std::vector<int> &levels, size_t 
 
     std::vector<int> dampened_levels{levels};
     dampened_levels.erase(dampened_levels.begin() + problem_pos);
+
     return checkLevelSafety(dampened_levels, false, true);
 }
 
